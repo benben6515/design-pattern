@@ -11,8 +11,10 @@ The `*.origin.js` files are example without design-pattern, and the `*.js` files
 
 That's it, happy coding.
 
-### EASY Pattern
-- 01
+### WDS（Web Dev Simplified）
+
+- 01 null object pattern
+- 02 builder pattern
 
 ### Resource
-- https://www.youtube.com/playlist?list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f
+- WDS：https://www.youtube.com/playlist?list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f
