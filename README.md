@@ -18,3 +18,5 @@ That's it, happy coding.
 
 ### Resource
 - WDS：https://www.youtube.com/playlist?list=PLZlA0Gpn_vH_CthENcPCM0Dww6a5XYC7f
+- https://www.patterns.dev/posts/
+- https://refactoring.guru/design-patterns/catalog
