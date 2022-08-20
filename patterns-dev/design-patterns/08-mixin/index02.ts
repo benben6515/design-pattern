@@ -1,3 +1,10 @@
+class Dog02 {
+  name
+  constructor(name) {
+    this.name = name;
+  }
+}
+
 const animalFunctionality = {
   walk: () => console.log('walking!'),
   sleep: () => console.log('sleeping!'),
@@ -16,4 +23,4 @@ const dogFunctionality02 = {
 };
 
 Object.assign(dogFunctionality02, animalFunctionality);
-Object.assign(Dog.prototype, dogFunctionality02);
+Object.assign(Dog02.prototype, dogFunctionality02);

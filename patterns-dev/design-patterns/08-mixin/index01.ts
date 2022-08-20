@@ -15,5 +15,7 @@ const dogFunctionality = {
 Object.assign(Dog.prototype, dogFunctionality);
 
 const pet1 = new Dog('benben');
+// @ts-ignore
 pet1.bark();
+// @ts-ignore
 pet1.play();
