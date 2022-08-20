@@ -1,4 +1,4 @@
-class Dog {
+class Dog02 {
   constructor(name) {
     this.name = name;
   }
@@ -7,7 +7,7 @@ class Dog {
     console.log('Woof!');
   }
 }
-class SuperDog extends Dog {
+class SuperDog extends Dog02 {
   constructor(name) {
     super(name);
   }
