@@ -1,25 +1,26 @@
-let counter = 0
-class Counter {
+class Counter01 {
+  private counter: 0
+
   getInstance() {
     return this
   }
 
   getCount() {
-    return counter
+    return this.counter
   }
 
   increment() {
-    return ++counter
+    return ++this.counter
   }
 
   decrement() {
-    return --counter
+    return --this.counter
   }
 }
 
 // test case
-const counter1 = new Counter()
-const counter2 = new Counter()
+const counter1 = new Counter01()
+const counter2 = new Counter01()
 
 console.log(counter1.getInstance() === counter2.getInstance())
 console.log(counter1.getCount())
