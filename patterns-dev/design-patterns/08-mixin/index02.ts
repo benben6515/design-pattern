@@ -1,6 +1,5 @@
 class Dog02 {
-  name
-  constructor(name) {
+  constructor(public name: string) {
     this.name = name;
   }
 }
@@ -24,3 +23,10 @@ const dogFunctionality02 = {
 
 Object.assign(dogFunctionality02, animalFunctionality);
 Object.assign(Dog02.prototype, dogFunctionality02);
+
+const pet2 = new Dog02('benben')
+
+// @ts-ignore
+pet2.walk()
+// @ts-ignore
+pet2.sleep()
