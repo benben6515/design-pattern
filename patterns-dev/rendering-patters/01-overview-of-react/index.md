@@ -26,11 +26,19 @@ REF: [Overview of React.js](https://www.patterns.dev/posts/reactjs/)
 
 // Omit
 
+---
+
+對吧？不對的話，胡立會哭哭唷：（
+
+---
+
+接下來，我想講講「**State**」狀態
+
 ## 狀態
 
 不理解狀態機，別說你理解狀態
 
-但是！什麼是「狀態」
+但是！什麼是「狀態」什麼是「狀態機」
 
 像是：
 
@@ -76,8 +84,11 @@ toggleService.send('TOGGLE');
 ```javascript
 const ReactButton = () => {
   const [toggle, setToggle] = useState(false)
+  console.log(toggle)
   setToggle((prev) => !prev)
+  console.log(toggle)
   setToggle((prev) => !prev)
+  console.log(toggle)
 }
 ```
 
@@ -94,7 +105,7 @@ const submit = () => {
     return;
   }
   // WTF ? if you need add one more state like: `isExpired`
-  if (!isLoading && !isDisabled && checkIsValid(form.username) && checkIsPassword(form.password)) {
+  if (!isLoading && !isDisabled && checkIsUsernameValid(form.username) && checkIsPasswordValid(form.password)) {
     return;
   }
 
@@ -115,3 +126,40 @@ const submit = () => {
 - X-State 的學習成本 >  Redux
 - X-State 可以做到 Redux 做不到的事
 - Redux 做不到 X-State 可以做到的事
+
+看一下官網的範例吧
+
+## X State
+
+- REF: <https://xstate.js.org/docs/>
+
+## TL;DR
+
+A state machine or state chart is like [elevator system](https://www.softwareideas.net/a/1562/elevator-system-uml-state-machine-diagram-)
+
+[State machine - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/State_machine)
+
+Finite States Machines:
+
+- have one initial state
+- a finite number of states
+- a finite number of events
+- a mapping of state transitions triggered by events
+- a finite number of final states
+
+## Terms
+
+- [(Finite) State Machines](https://en.wikipedia.org/wiki/Finite-state_machine)
+- [State Charts / State diagram](https://en.wikipedia.org/wiki/State_diagram)
+
+## FYI
+
+- [From State Machine to XState :: 2021 IThome 鐵人賽](https://ithelp.ithome.com.tw/users/20130721/ironman/4083) (Recommend!)
+- [Redux and XState](https://stackoverflow.com/questions/54482695/what-is-an-actual-difference-between-redux-and-a-state-machine-e-g-xstate)
+- [XState 状态管理](https://heysam.xyz/blog/xstate-state-management/)
+
+## Example
+
+> check code `./game-play.ts` or
+>
+> check demo <https://stately.ai/viz/0b318ce8-6b24-41ff-8808-c1f26149423c>
